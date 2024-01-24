@@ -1,0 +1,42 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: seplaep-web-manage # 应用名称
+  datasource: # 数据源配置
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/seplaep_test?useUnicode=true&characterEncoding=utf-8
+      username: root
+      password: root
+  servlet:
+    multipart:
+      max-request-size: 100MB # 最大请求文件大小,默认10MB
+      max-file-size: 10MB # 单个请求文件大小,默认1MB
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true # 驼峰命名法映射 address_book ---> AddressBook
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl # 日志输出
+
+
+#reggie:
+#  path: E:\minioUpload
+#minio 服务器配置：
+#minio:
+#  endpoint: http://localhost:9000
+#  accesskey: minioadmin
+#  secretkey: minioadmin
+#  bucketname: reggie
+#  countdown: 60
+
+# aliyun服务器oss配置：
+#reggie:
+#  oss:
+#    key: LTAI5tNmH22y9C7AxdFEgdNv
+#    secret: AHGC0JSnBuYtYg3BnNvyTuwlwyl27n
+#    endpoint: oss-cn-beijing.aliyuncs.com
+#    bucket: tyxy-gxm
+#    url: https://tanhua-gxm.oss-cn-beijing.aliyuncs.com
