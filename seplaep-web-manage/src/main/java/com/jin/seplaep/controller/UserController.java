@@ -1,8 +1,6 @@
 package com.jin.seplaep.controller;
 
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jin.seplaep.entity.User;
 import com.jin.seplaep.service.UserService;
@@ -11,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.io.Serializable;
-import java.sql.Wrapper;
 import java.util.List;
 
 import static com.jin.seplaep.utils.R.success;

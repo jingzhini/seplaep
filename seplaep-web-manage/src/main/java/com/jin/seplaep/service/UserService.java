@@ -1,13 +1,11 @@
 package com.jin.seplaep.service;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.jin.seplaep.entity.User;
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.jin.seplaep.utils.R;
 
 import java.io.Serializable;
-import java.util.List;
 
 /**
 * @Author jin

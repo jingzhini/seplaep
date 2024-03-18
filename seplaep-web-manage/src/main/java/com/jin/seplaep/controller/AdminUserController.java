@@ -30,7 +30,7 @@ public class AdminUserController   {
     private AdminUserService adminUserService;
 
     /**
-     * 分页查询所有数据
+     * 分页查询所有用户数据
      *
      * @param page      分页对象
      * @param adminUser 查询实体

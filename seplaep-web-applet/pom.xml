@@ -9,12 +9,12 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <modelVersion>4.0.0</modelVersion>
-    <artifactId>seplaep-web-manage</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>seplaep-web-manage</name>
-    <description>seplaep-web-manage</description>
 
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>seplaep-web-applet</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>seplaep-web-applet</name>
+    <description>seplaep-web-applet</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -24,13 +24,6 @@
 
     <dependencies>
 
-        <!--对自定义service模块依赖-->
-        <dependency>
-            <groupId>com.jin</groupId>
-            <artifactId>seplaep-service</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-
         <!--对自定义utils模块依赖-->
         <dependency>
             <groupId>com.jin</groupId>
@@ -39,8 +32,8 @@
             <scope>compile</scope>
         </dependency>
 
-    </dependencies>
 
+    </dependencies>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -70,7 +63,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>${spring-boot.version}</version>
                 <configuration>
-                    <mainClass>SeplaepWebManageApplication</mainClass>
+                    <mainClass>com.jin.seplaep.SeplaepWebAppletApplication</mainClass>
                     <skip>true</skip>
                 </configuration>
                 <executions>

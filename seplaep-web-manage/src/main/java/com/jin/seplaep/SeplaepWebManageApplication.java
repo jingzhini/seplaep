@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 /**
  * @Author jin
  * @Date 2024/01/17 周三 17:22
- * @Description 后端管理界面启动类入口；
+ * @Description web后台管理服务端，启动类入口；
  *
  */
 @SpringBootApplication //主类
@@ -20,7 +20,7 @@ public class SeplaepWebManageApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(SeplaepWebManageApplication.class, args);
-        log.info("项目启动成功！！！");
+        log.info("web后台管理服务端，项目启动成功！！！");
     }
 
 }

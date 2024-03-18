@@ -21,10 +21,10 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,name,nick_name,
-        phone,password,sex,
-        id_number,avatar,status,
-        creat_time,update_time,role,
+        id,`name`,nick_name,
+        phone,`password`,sex,
+        id_number,avatar,`status`,
+        creat_time,update_time,`role`,
         delete_status
     </sql>
 </mapper>

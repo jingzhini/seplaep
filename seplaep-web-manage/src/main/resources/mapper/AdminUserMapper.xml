@@ -17,8 +17,8 @@
     </resultMap>
 
     <sql id="Base_Column_List">
-        id,name,password,
-        phone,id_number,status,
-        create_time,update_time,role
+        id,`name`,`password`,
+        phone,id_number,`status`,
+        create_time,update_time,`role`
     </sql>
 </mapper>
